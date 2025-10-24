@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname,"public")));
         })
 
    })
- // this is a commi6
+ // this is a commit ******
    // creates the name of the file and the discription and also adds the texttogether like nigga 1.txt to nigga.txt and also saves the file to files folder
  app.post('/create',(req, res)=>{
     fs.writeFile(`./files/${req.body.title.split(' ').join('')}.txt` , req.body.details, (err)=>{
